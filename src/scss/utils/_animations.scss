@@ -1,0 +1,13 @@
+@keyframes line-left {
+    0% { transform: rotate(-22deg) translate(130%); }   
+    100% { transform: rotate(-22deg) translate(10%); }
+}
+@keyframes line-right {
+    0% { transform: rotate(22deg) translate(-130%); }   
+    100% { transform: rotate(22deg) translate(-10%); }
+}
+@keyframes line-opacity {
+    0% { opacity: 0; } 
+    58% { opacity: 0; }   
+    100% { opacity: 1; }
+}

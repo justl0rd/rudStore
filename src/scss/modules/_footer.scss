@@ -1,0 +1,37 @@
+.footer {
+  &__contacts {
+      display: flex;
+      justify-content: space-between;
+      padding: 1.5rem 0 2rem;
+      border-top: 1px solid $border-color;
+  }
+
+  &__socials {
+      display: flex;
+      align-items: center;
+  }
+  &__small-text {
+      font-size: rem(14);
+      margin-bottom: .8rem;
+  }
+  &__social {
+      margin-right: 1.6rem;
+      color: $colored-text;
+      font-size: rem(18);
+
+      .flaticon-youtube {
+          &::before {
+            vertical-align: middle;
+          }
+      }
+  }
+  &__copyrights {
+    background: $bg-dark;
+    padding: 1rem 0;
+  }
+  &__copyright {
+    font-size: rem(14);
+    color: $main-light-color;
+    opacity: .5;
+  }
+}

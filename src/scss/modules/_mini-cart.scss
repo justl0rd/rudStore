@@ -1,0 +1,106 @@
+.mini-cart {
+    width: 100%;
+    padding: 1.8rem;
+    max-width: 333px;
+    position: absolute;
+    right: 0;
+    top: 100%;
+    z-index: 15;
+    background: $bg-light;
+    display: none;
+
+    &.active {
+        display: block;
+    }
+
+    &__item {
+        border-bottom: 1px solid $border-color;
+        padding: 1.5rem 1rem 1.5rem 0;
+        margin-bottom: 1.2rem;
+        position: relative;
+
+        &-img {
+            width: 65px;
+            margin-right: 2rem;
+            object-fit: contain;
+        }
+        &-info {
+            display: flex;
+            flex-direction: column;
+        }
+        &-link {
+            margin-bottom: 5px;
+        }
+        &-price {
+            margin-bottom: 0.8rem;
+        }
+        &-remove {
+            position: absolute;
+            right: 0;
+            top: 0;
+            font-size: rem(13);
+            line-height: 1.2em;
+            background: transparent;
+            color: $remove-color;
+            transition: all .2s;
+            
+            &:hover {
+                color: $remove-active-color;
+            }
+        }
+    }
+    
+    &__calc {
+        max-width: 120px;
+        &-button {
+            color: $colored-text;
+            background: transparent;
+            transition: all .2s;
+            &:hover {
+                color: $main-color;
+            }
+        }
+        &-munus {
+            transform: rotate(180deg);  
+            
+        }
+        &-plus {
+            
+        }
+        &-input {
+            width: 50px;
+            text-align: center;
+        }
+    }
+    &__total-wrapp {
+        margin-bottom: 1.2rem;
+    }
+    &__amount {
+        margin-left: 1.2rem;
+        margin-right: 0.2rem;
+        color: $colored-text;
+    }
+    &__currency {
+        color: $colored-text;
+    }
+    &__controls {
+        flex-direction: column;
+    }
+    &__submit {
+        padding: 1.2rem;
+        margin-bottom: 1.5rem;
+        background: $colored-text;
+        color: $main-light-color;
+        border: 1px solid $colored-text;
+        transition: all .2s;
+
+        &:hover {
+            background: transparent;
+            color: $colored-text;
+        }
+    }
+    &__link {
+        text-decoration: underline;
+        color: $colored-text;
+    }
+}

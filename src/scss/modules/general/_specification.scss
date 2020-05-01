@@ -1,0 +1,134 @@
+html {
+	font-size: $mainFontSize;
+}
+
+body {
+	padding: 0;
+	margin: 0;
+	letter-spacing: 0.02em;
+	line-height: 1.2em;
+	color: $main-text-color;
+	background-size: inherit;
+	background-color: $bg-color;
+	font-family: 'Roboto', sans-serif;
+	font-weight: normal;
+	font-style: normal;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+a {
+	text-decoration: none;
+	letter-spacing: 0.02em;
+	line-height: 1.2em;
+}
+
+p {
+	margin: 0;
+	padding: 0;
+	letter-spacing: 0.02em;
+	line-height: 1.2em;
+}
+
+ul,
+li {
+	display: block;
+	padding: 0;
+	margin: 0;
+	letter-spacing: 0.02em;
+	line-height: 1.2em;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	padding: 0;
+	margin: 0;
+	letter-spacing: 0.02em;
+	line-height: 1.2em;
+	font-weight: bold;
+}
+
+h1 {
+	font-size: rem(42);
+}
+
+h2 {
+	font-size: rem(36);
+}
+
+h3 {
+	font-size: rem(30);
+}
+
+h4 {
+	font-size: rem(18);
+}
+
+h5 {
+	font-size: rem(16);
+}
+
+h6 {
+	font-size: rem(18);
+}
+
+a,
+a:hover,
+a:active  {
+	transition: all 0.2s ease;
+	text-decoration: none;
+	color: inherit;
+}
+
+input:focus,
+input,
+input:hover,
+input:active,
+button:focus,
+button,
+button:hover,
+button:active {
+	outline: none;
+}
+
+button {
+	cursor: pointer;
+	letter-spacing: 0.02em;
+	border: none;
+}
+
+input {
+	background: transparent;
+	border: none;
+	padding: 5px 0;
+}
+
+.d-flex {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+}
+.item-center {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.bold {
+	font-weight: bold;
+}
+
+.title-colored {
+	color: $title-colored;
+}
+
+.active-color {
+	color: $colored-text;
+}

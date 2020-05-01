@@ -1,0 +1,167 @@
+@media (max-width: 1200px) {
+    .banner {
+        &__item {
+            p {
+                font-size: rem(38);
+            }
+        }
+        &__slider {
+            .owl-dots {
+                left: 10%;
+            }
+        }
+    }
+    
+}
+@media (max-width: 992px) {
+    .banner {
+        height: 300px;
+        &__item {
+            height: 300px;
+        }
+    }
+    .categories {
+        &__item {
+            min-height: 180px;
+        }
+    }
+    
+}
+
+@media (max-width: 768px) {
+    .header {
+        .hamburger {
+            display: block;
+            margin-left: auto;
+        }
+        .cart-small {
+            margin: 0 auto;
+        }
+    }
+    .banner {
+        height: 250px;
+        &__item {
+            height: 250px;
+
+            p {
+                padding-top: 30px;
+            }
+        }
+    }
+    .categories {
+        &__item {
+            width: 100%;
+        }
+    }
+    .news {
+        padding-bottom: 0;
+        &__item {
+            margin-bottom: 2rem;
+        }
+        &__img {
+            max-height: 200px;
+        }
+    }
+    .footer {
+        &__contacts {
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            padding: 1.5rem 0 1rem;
+
+            .logo {
+                margin-bottom: 1rem;
+            }
+        }
+        &__item {
+            margin-bottom: 1.2rem;
+        }
+        &__small-text {
+            margin-bottom: 0.4em;
+        }
+        &__socials {
+            justify-content: space-between;
+            margin-top: 0.6rem;
+        }
+        &__social {
+            margin-right: 0;
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .header {
+        .logo {
+            &__img {
+                width: 60px;
+            }
+        }
+        .cart-small {
+            &__icon {
+                width: 24px;
+                height: 36px;
+                margin-left: 0.6rem;
+            }
+            &__info {
+                font-size: rem(13);
+            }
+        }
+    }
+    .banner {
+        height: 220px;
+        &__item {
+            height: 220px;
+
+            p {
+                padding-top: 25px;
+                font-size: rem(33);
+                max-width: 290px;
+            }
+        }
+        &__slider {
+            .owl-dots {
+                left: 5%;
+
+                .owl-dot {
+                    span {
+                        margin-right: 25px;
+                    }
+                }
+            }
+        }
+    }
+    .menu {
+        height: 100%;
+
+        &__list {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            padding-right: 1.5rem;
+            
+            li {
+                margin: 0 0 1rem;
+            }
+        }
+    }
+    .categories {
+        &__item {
+            min-height: 150px;
+        }
+        &__link {
+            padding: 1.5rem;
+            h3 {
+                font-size: rem(27);
+            }
+        }
+    }
+    .news {
+        &__name {
+            margin-top: 1rem;
+        }
+    }
+}
+
+@media (max-width: 425px) {
+
+}
