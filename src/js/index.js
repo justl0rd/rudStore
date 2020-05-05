@@ -49,9 +49,33 @@ function clickHandler() {
     })
 }
 
+function addSticlyClass() {
+    document.getElementById("header").classList.add('sticly');
+    document.getElementById("main").classList.add('sticly');
+    document.getElementById("menu").classList.add('sticly');
+}
+function removeSticlyClass() {
+    document.getElementById("header").classList.remove('sticly');
+    document.getElementById("main").classList.remove('sticly');
+    document.getElementById("menu").classList.remove('sticly');
+}
+
+function scrollHandler() {
+    document.addEventListener('scroll', () => {
+        let topOffset = window.pageYOffset;
+        if (topOffset > 1) {
+            addSticlyClass();
+        } else {
+            removeSticlyClass();
+        }
+        
+    })
+}
+
 document.addEventListener("DOMContentLoaded", () => {
     miniCartStatus();
     langStatus();
     hamburgerStatus();
     clickHandler();
+    scrollHandler()
 });

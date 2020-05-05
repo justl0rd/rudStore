@@ -25,6 +25,16 @@
             min-height: 180px;
         }
     }
+    .catalog {
+        &__products {
+            &.products {
+                .product {
+                    max-width: 100%;
+                    justify-content: center;
+                }
+            }
+        }
+    }
     
 }
 
@@ -32,10 +42,22 @@
     .header {
         .hamburger {
             display: block;
-            margin-left: auto;
+            margin-right: auto;
         }
         .cart-small {
-            margin: 0 auto;
+            margin-left: auto;
+        }
+        &__row {
+            flex-wrap: wrap;
+        }
+        .searchform {
+            max-width: 100%;
+            margin: .7rem 0 0;
+        }
+        &.sticly {
+            .searchform {
+                display: none;
+            }
         }
     }
     .banner {
@@ -60,6 +82,12 @@
         }
         &__img {
             max-height: 200px;
+        }
+    }
+    .menu {
+        padding: 165px 0 1.5rem;
+        &.sticly {
+            padding: 100px 0 1.5rem;
         }
     }
     .footer {
@@ -87,6 +115,9 @@
             margin-right: 0;
         }
     }
+    .main {
+        padding-top: 130px;
+    }
 }
 
 @media (max-width: 576px) {
@@ -108,13 +139,13 @@
         }
     }
     .banner {
-        height: 220px;
+        height: 160px;
         &__item {
-            height: 220px;
+            height: 160px;
 
             p {
-                padding-top: 25px;
-                font-size: rem(33);
+                padding-top: 15px;
+                font-size: rem(28);
                 max-width: 290px;
             }
         }
@@ -147,6 +178,7 @@
     .categories {
         &__item {
             min-height: 150px;
+            margin-bottom: 1rem;
         }
         &__link {
             padding: 1.5rem;
@@ -158,6 +190,28 @@
     .news {
         &__name {
             margin-top: 1rem;
+        }
+    }
+    .catalog {
+        &__products {
+            &.products {
+                .product {
+                    flex-wrap: wrap;
+                    margin-bottom: 3rem;
+                }
+            }
+        }
+    }
+    .mini-cart {
+        &__item {
+            padding: 1.2rem 1rem 0.8rem 0;
+            &-price {
+                margin-bottom: 0.5rem;
+            }
+        }
+        &__submit {
+            margin-bottom: 1rem;
+            padding: 1rem;
         }
     }
 }

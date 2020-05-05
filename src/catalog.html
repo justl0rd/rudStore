@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="ua-UK">
+<head>
+	<meta charset="UTF-8">
+	<meta name="robots" content="noindex,follow">
+	<title>Рудь | Каталог товарів</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Site description">
+	<meta name="keywords" content="site, keywords">
+	<!-- Favicon -->
+	<link rel="shortcut icon" href="favicon.ico">
+	<link rel="icon" type="image/png" sizes="196x196" href="favicon-192.png">
+	<!-- OG Tags -->
+	<meta property="og:title" content="OG Title">
+	<meta property="og:description" content="OG Description">
+	<meta property="og:type" content="article">
+	<meta property="og:image" content="#" >
+	<meta property="og:site_name" content="Site Name">
+	<!-- Chrome, Firefox OS and Opera -->
+ 	<meta name="theme-color" content="#eeeeee">
+	<!-- Windows Phone -->
+	<meta name="msapplication-navbutton-color" content="#eeeeee">
+	<!-- iOS Safari -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="#eeeeee">
+</head>
+<body>
+	<header class="header" id="header">
+		<div class="container">
+			<div class="header__row">
+				<div class="col-4 col-md-1">
+					<button class="hamburger" id="hamburger">
+						<span></span>
+						<span></span>
+						<span></span>
+					</button>
+				</div>
+				<div class="col-12 col-md-4 order-1 order-md-0">
+					<form action="javascript: void(0)" class="searchform" id="searchform">
+						<label>
+							<input class="searchform__input" type="text" placeholder="Пошук">
+						</label>
+						<button class="fi flaticon-magnifying-glass searchform__btn"></button>
+					</form>
+				</div>
+				<div class="col-4 col-md-2">
+					<a class="logo" href="/">
+						<img src="/assets/img/logo.png" alt="РУДЬ" class="logo__img">
+					</a>
+				</div>
+				<div class="col-md-3 d-none d-md-block">
+					<div class="lang">
+						<div class="lang__box" id="lang__box">
+							<ul>
+								<li>
+									Рус
+								</li>
+								<li>
+									<a href="index.html">
+										Укр
+									</a>
+								</li>
+							</ul>
+							<div class="fi flaticon-next lang__arrow"></div>
+						</div>
+					</div>
+				</div>
+				<div class="col-4 col-md-2">
+					<div class="cart-small" id="open-mini-cart">
+						<div class="cart-small__info">
+							<span class="cart-small__amount bold">125</span>
+							<span class="currency">грн</span>
+						</div>
+						<button class="cart-small__icon"></button>
+					</div>
+				</div>
+			</div>
+			<div class="mini-cart" id="mini-cart">
+				<div class="mini-cart__items">
+					<div class="mini-cart__item d-flex">
+						<img class="mini-cart__item-img" src="/assets/img/mini-cart-img.jpg" alt="«Імперія» тортуфо">
+						<div class="mini-cart__item-info">
+							<a href="#" class="mini-cart__item-link bold">
+								«Імперія» тортуфо
+							</a>
+							<div  class="mini-cart__item-price">
+								<span class="mini-cart__item-coast">8,20</span><span>грн</span>
+							</div>
+							<div class="mini-cart__calc d-flex">
+								<button class="mini-cart__calc-button mini-cart__calc-munus"><i class="fi flaticon-next"></i></button>
+								<input class="mini-cart__calc-input bold" type="text" value="1">
+								<button class="mini-cart__calc-button mini-cart__calc-plus"><i class="fi flaticon-next"></i></button>
+							</div>
+						</div>
+						<button class="mini-cart__item-remove">
+							<i class="fi flaticon-delete"></i>
+						</button>
+					</div>
+				</div>
+				<div class="mini-cart__controls d-flex">
+					<div class="mini-cart__total-wrapp d-flex">
+						<p class="bold">До сплати (грн):</p>
+						<span class="mini-cart__amount bold">41,00</span>
+						<span class="mini-cart__currency bold">грн</span>
+					</div>
+					<button class="mini-cart__submit">
+						Замовити
+					</button>
+					<a href="#" class="mini-cart__link">
+						Перейти до кошика
+					</a>
+				</div>
+			</div>
+		</div>
+	</header>
+	<main class="main" id="main">
+		<article class="banner" id="banner">
+			<div class="banner__slider owl-carousel">
+				<a href="#" class="banner__item">
+					<img src="/assets/img/banner-bg.jpg">
+					<div class="container">
+						<p>Є моменти, від яких перехоплює подих</p>
+					</div>
+				</a>
+				<a href="#" class="banner__item">
+					<img src="/assets/img/banner-bg.jpg">
+					<div class="container">
+						<p>Є моменти, від яких перехоплює подих</p>
+					</div>
+				</a>
+				<a href="#" class="banner__item">
+					<img src="/assets/img/banner-bg.jpg">
+					<div class="container">
+						<p>Є моменти, від яких перехоплює подих</p>
+					</div>
+				</a>
+			</div>
+		</article>
+		<article class="catalog" id="catalog">
+			<div class="container">
+				<h1 class="page-title">
+					Каталог продукції
+				</h1>
+				<nav class="catalog__filter">
+					<ul class="catalog__filter-list">
+						<li>
+							<a href="#">
+								<img src="assets/img/catalog/icecream.png">
+								<span>Морозиво</span>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<img src="assets/img/catalog/horeka.png">
+								<span>Хорека</span>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<img src="assets/img/catalog/frozen-products.png">
+								<span>Заморожені продукти</span>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<img src="assets/img/catalog/frozen-products.png">
+								<span>Масло</span>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<img src="assets/img/catalog/frozen-products.png">
+								<span>Спреди</span>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<img src="assets/img/catalog/milk.png">
+								<span>Молочні продукти</span>
+							</a>
+						</li>
+					</ul>
+				</nav>
+				<div class="catalog__products products" id="catalog__products">
+					<div class="product">
+						<div class="product__img">
+							<img src="assets/img/products/product-1.png" alt="«Імпреза» три шоколади" title="«Імпреза» три шоколади">
+						</div>
+						<div class="product__info">
+							<h3 class="product__title">
+								«Імпреза» три шоколади
+							</h3>
+							<div class="product__subtitle">
+								<p class="product__type">
+									Морозиво ріжок,
+								</p>
+								<span class="product__weight">
+									100 г
+								</span>
+							</div>
+							<ul class="product__properties">
+								<li class="product__property property">
+									<span class="property__name">Кількість у ящику (шт.):</span>
+									<span class="property__value">16</span>
+								</li>
+								<li class="product__property property">
+									<span class="property__name">Ціна (грн):</span>
+									<span class="property__value">8,64</span>
+								</li>
+								<li class="product__property property">
+									<span class="property__name">Оптова ціна (грн):</span>
+									<span class="property__value">7,50</span>
+								</li>
+								<li class="product__property property">
+									<span class="property__name">Арт:</span>
+									<span class="property__value">2345678789</span>
+								</li>
+							</ul>
+							<div class="product__amount bold d-flex">
+								<span>
+									Кількість:
+								</span>
+								<div class="product__calc d-flex">
+									<button class="product__calc-button product__calc-munus"><i class="fi flaticon-next"></i></button>
+									<input class="product__calc-input bold" type="text" value="1">
+									<button class="product__calc-button product__calc-plus"><i class="fi flaticon-next"></i></button>
+								</div>
+							</div>
+							<button class="product__add btn-circle">
+								Додати в кошик
+							</button>
+						</div>
+					</div>
+					<div class="product">
+						<div class="product__img">
+							<img src="assets/img/products/product-2.png" alt="«Імпреза» три шоколади" title="«Імпреза» три шоколади">
+						</div>
+						<div class="product__info">
+							<h3 class="product__title">
+								«Імпреза» три шоколади
+							</h3>
+							<div class="product__subtitle">
+								<p class="product__type">
+									Морозиво ріжок,
+								</p>
+								<span class="product__weight">
+									100 г
+								</span>
+							</div>
+							<ul class="product__properties">
+								<li class="product__property property">
+									<span class="property__name">Кількість у ящику (шт.):</span>
+									<span class="property__value">16</span>
+								</li>
+								<li class="product__property property">
+									<span class="property__name">Ціна (грн):</span>
+									<span class="property__value">8,64</span>
+								</li>
+								<li class="product__property property">
+									<span class="property__name">Оптова ціна (грн):</span>
+									<span class="property__value">7,50</span>
+								</li>
+								<li class="product__property property">
+									<span class="property__name">Арт:</span>
+									<span class="property__value">2345678789</span>
+								</li>
+							</ul>
+							<div class="product__amount bold d-flex">
+								<span>
+									Кількість:
+								</span>
+								<div class="product__calc d-flex">
+									<button class="product__calc-button product__calc-munus"><i class="fi flaticon-next"></i></button>
+									<input class="product__calc-input bold" type="text" value="1">
+									<button class="product__calc-button product__calc-plus"><i class="fi flaticon-next"></i></button>
+								</div>
+							</div>
+							<button class="product__add btn-circle">
+								Додати в кошик
+							</button>
+						</div>
+					</div>
+					<div class="product">
+						<div class="product__img">
+							<img src="assets/img/products/product-3.png" alt="«Імперія» тортуфо" title="«Імперія» тортуфо">
+						</div>
+						<div class="product__info">
+							<h3 class="product__title">
+								«Імперія» тортуфо
+							</h3>
+							<div class="product__subtitle">
+								<p class="product__type">
+									Морозиво ріжок,
+								</p>
+								<span class="product__weight">
+									100 г
+								</span>
+							</div>
+							<ul class="product__properties">
+								<li class="product__property property">
+									<span class="property__name">Кількість у ящику (шт.):</span>
+									<span class="property__value">16</span>
+								</li>
+								<li class="product__property property">
+									<span class="property__name">Ціна (грн):</span>
+									<span class="property__value">8,64</span>
+								</li>
+								<li class="product__property property">
+									<span class="property__name">Оптова ціна (грн):</span>
+									<span class="property__value">7,50</span>
+								</li>
+								<li class="product__property property">
+									<span class="property__name">Арт:</span>
+									<span class="property__value">2345678789</span>
+								</li>
+							</ul>
+							<div class="product__amount bold d-flex">
+								<span>
+									Кількість:
+								</span>
+								<div class="product__calc d-flex">
+									<button class="product__calc-button product__calc-munus"><i class="fi flaticon-next"></i></button>
+									<input class="product__calc-input bold" type="text" value="1">
+									<button class="product__calc-button product__calc-plus"><i class="fi flaticon-next"></i></button>
+								</div>
+							</div>
+							<button class="product__add btn-circle">
+								Додати в кошик
+							</button>
+						</div>
+					</div>
+					<div class="product">
+						<div class="product__img">
+							<img src="assets/img/products/product-4.png" alt="«Імпреза» три шоколади" title="«Імпреза» три шоколади">
+						</div>
+						<div class="product__info">
+							<h3 class="product__title">
+								«Імпреза» три шоколади
+							</h3>
+							<div class="product__subtitle">
+								<p class="product__type">
+									Морозиво ріжок,
+								</p>
+								<span class="product__weight">
+									100 г
+								</span>
+							</div>
+							<ul class="product__properties">
+								<li class="product__property property">
+									<span class="property__name">Кількість у ящику (шт.):</span>
+									<span class="property__value">16</span>
+								</li>
+								<li class="product__property property">
+									<span class="property__name">Ціна (грн):</span>
+									<span class="property__value">8,64</span>
+								</li>
+								<li class="product__property property">
+									<span class="property__name">Оптова ціна (грн):</span>
+									<span class="property__value">7,50</span>
+								</li>
+								<li class="product__property property">
+									<span class="property__name">Арт:</span>
+									<span class="property__value">2345678789</span>
+								</li>
+							</ul>
+							<div class="product__amount bold d-flex">
+								<span>
+									Кількість:
+								</span>
+								<div class="product__calc d-flex">
+									<button class="product__calc-button product__calc-munus"><i class="fi flaticon-next"></i></button>
+									<input class="product__calc-input bold" type="text" value="1">
+									<button class="product__calc-button product__calc-plus"><i class="fi flaticon-next"></i></button>
+								</div>
+							</div>
+							<button class="product__add btn-circle">
+								Додати в кошик
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</article>
+		<section class="news" id="news">
+			<div class="container">
+				<h2 class="news__title title-colored">
+					Новини
+				</h2>
+				<div class="row">
+					<div class="col-12 col-md-4">
+						<div class="news__item">
+							<img class="news__img" src="/assets/img/news-1.jpg" alt="Морозиво Ейфорія">
+							<a href="#">
+								<h4 class="news__name">
+									Мить ейфорії у подарунок
+								</h4>
+							</a>
+							<span class="news__date">
+								02.07.2019
+							</span>
+						</div>
+					</div>
+					<div class="col-12 col-md-4">
+						<div class="news__item">
+							<img class="news__img" src="/assets/img/news-2.jpg" alt="Морозиво Ейфорія">
+							<a href="#">
+								<h4 class="news__name">
+									Мить ейфорії у подарунок
+								</h4>
+							</a>
+							<span class="news__date">
+								02.07.2019
+							</span>
+						</div>
+					</div>
+					<div class="col-12 col-md-4">
+						<div class="news__item">
+							<img class="news__img" src="/assets/img/news-1.jpg" alt="Морозиво Ейфорія">
+							<a href="#">
+								<h4 class="news__name">
+									Мить ейфорії у подарунок
+								</h4>
+							</a>
+							<span class="news__date">
+								02.07.2019
+							</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
+	<footer class="footer" id="footer">
+		<div class="container">
+			<div class="footer__contacts">
+				<a class="logo" href="#">
+					<img src="/assets/img/logo.png" alt="РУДЬ" class="logo__img">
+				</a>
+				<div class="footer__item">
+					<p class="footer__small-text">
+						Телефон гарячоі лініі:
+					</p>
+					<a href="tel:0800501772" class="footer__link active-color bold">
+						0 800 50 17 72
+					</a>
+				</div>
+				<div class="footer__item">
+					<p class="footer__small-text">
+						Приймальня:
+					</p>
+					<a href="tel:0412501772" class="footer__link active-color bold">
+						(0412) 50 17 72
+					</a>
+				</div>
+				<div class="footer__item">
+					<p class="footer__small-text">
+						Графік роботи:
+					</p>
+					<span class="active-color bold">
+						пн-нд, з 7 до 19
+					</span>
+				</div>
+				<div class="footer__item">
+					<p class="footer__small-text">
+						Слідкуйте за нами:
+					</p>
+					<div class="footer__socials">
+						<a href="https://www.instagram.com/" class="footer__social" target="_blank">
+							<i class="fi flaticon-instagram"></i>
+						</a>
+						<a href="http://facebook.com/" class="footer__social" target="_blank">
+							<i class="fi flaticon-facebook"></i>
+						</a>
+						<a href="https://www.youtube.com/" class="footer__social" target="_blank">
+							<i class="fi flaticon-youtube"></i>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footer__copyrights">
+			<div class="container">
+				<span class="footer__copyright">
+					&#169; Компанія “Рудь”, 2020
+				</span>
+			</div>
+		</div>
+	</footer>
+	<nav class="menu" id="menu">
+		<div class="container">
+			<div class="mobile-lang d-block d-md-none">
+				<ul class="mobile-lang__list">
+					<li>
+						<span>Рус</span>
+					</li>
+					<li>
+						<a href="#">
+							Укр
+						</a>
+					</li>
+				</ul>
+			</div>
+			<ul class="menu__list">
+				<li>
+					<a class="active" href="javascript: void(0)">
+						Каталог
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						Меню 2
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						Меню 3
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						Меню 4
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						Меню 5
+					</a>
+				</li>
+			</ul>
+		</div>
+	</nav>
+<script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+</body>
+</html>

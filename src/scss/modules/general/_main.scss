@@ -2,7 +2,7 @@
     padding-top: 90px;
 }
 .categories {
-    padding: 3rem 0;
+    padding: 3rem 0 0;
     
     &__items {
         display: flex;
@@ -43,7 +43,7 @@
 }
 
 .news {
-    padding-bottom: 5rem;
+    padding: 3rem 0 5rem;
 
     &__title {
         margin-bottom: 2.5rem;
