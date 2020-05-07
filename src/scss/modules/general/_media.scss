@@ -54,11 +54,11 @@
             max-width: 100%;
             margin: .7rem 0 0;
         }
-        &.sticly {
-            .searchform {
-                display: none;
-            }
-        }
+        // &.sticly {
+        //     .searchform {
+        //         display: none;
+        //     }
+        // }
     }
     .banner {
         height: 250px;
@@ -86,9 +86,9 @@
     }
     .menu {
         padding: 165px 0 1.5rem;
-        &.sticly {
-            padding: 100px 0 1.5rem;
-        }
+        // &.sticly {
+        //     padding: 100px 0 1.5rem;
+        // }
     }
     .footer {
         &__contacts {
@@ -193,11 +193,54 @@
         }
     }
     .catalog {
+        padding: 2rem 0 1rem;
         &__products {
             &.products {
                 .product {
                     flex-wrap: wrap;
-                    margin-bottom: 3rem;
+                    margin-bottom: 2rem;
+                    
+                    &__img {
+                        margin-right: 0;
+                        max-width: 30%;
+                    }
+                    &__info {
+                        max-width: 70%;
+                        padding-left: 1rem;
+                    }
+                    &__property {
+                        &.property {
+                            margin-bottom: 0.2rem;
+                        }
+                        .property {
+
+                            &__name {
+                                font-size: rem(13);
+                            }
+                            &__value {
+                                font-size: rem(13);
+                            }
+                        }
+                    }
+                    &__properties {
+                        margin: 0.5rem 0 0.2rem;
+                    }
+                    &__title {
+                        display: none;
+                        &-mobile {
+                            font-size: rem(16);
+                            margin-bottom: .6rem;
+                            width: 100%;
+                            text-align: center;
+                        }
+                    }
+                    &__subtitle {
+                        display: none;
+                    }
+                    &__add {
+                        margin-left: calc(-15% -.5rem);
+                        padding: 0.6rem 1rem;
+                    }
                 }
             }
         }
@@ -213,6 +256,12 @@
             margin-bottom: 1rem;
             padding: 1rem;
         }
+    }
+    .page-title {
+        margin-bottom: 2rem;
+    }
+    .btn-circle {
+        padding: .8rem 1.5rem;
     }
 }
 

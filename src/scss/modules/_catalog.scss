@@ -120,6 +120,9 @@
                     &-input {
                         width: 50px;
                         text-align: center;
+                        border: 1px solid $dark-border-color;
+                        border-radius: 3px;
+                        margin: 0 0.3rem;
                     }
                 }
                 &__amount {
