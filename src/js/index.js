@@ -4,6 +4,7 @@ function miniCartStatus() {
 
     toggleBtn.onclick = () => {
         miniCart.classList.toggle("active");
+        toggleBtn.classList.toggle("open");
     }
 }
 
@@ -45,8 +46,37 @@ function clickHandler() {
         if (e.target.closest('.mini-cart') === miniCart || e.target.closest(".cart-small") === miniCartBtn) {
         } else {
             modalClose(miniCart, "active");
+            modalClose(miniCartBtn, "open");
+        }
+
+        if (e.target.closest(".product__calc-button")) {
+            productCount(e.target.closest(".product__calc-button"))
         }
     })
+}
+
+function productCount(btn) {
+    let productInput = btn.parentElement.querySelector(".product__calc-input"); 
+    if (btn.classList.contains("product__calc-plus")) {
+        productInput.value ++;
+    }
+    if (btn.classList.contains("product__calc-minus")) {
+        productInput.value --;
+        if (productInput.value < 1) {
+            productInput.value = 1;
+        }
+    }
+}
+
+function productInputHandler() {
+    const productsInputs = document.querySelectorAll(".product__calc-input");
+
+    productsInputs.forEach(input => input.addEventListener('change', () => {
+        input.value = input.value.replace (/\D/g, '');
+        if (input.value === '' || input.value < 1) {
+            input.value = 1;
+        }
+    }))
 }
 
 function addSticlyClass() {
@@ -78,4 +108,5 @@ document.addEventListener("DOMContentLoaded", () => {
     hamburgerStatus();
     clickHandler();
     scrollHandler()
+    productInputHandler()
 });

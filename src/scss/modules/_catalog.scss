@@ -72,6 +72,12 @@
                     font-size: rem(18);
                     font-weight: 900;
                     margin-bottom: 0.3rem;
+
+                    a {
+                        &:hover {
+                            color: $colored-text;
+                        }
+                    }
                 }
                 &__subtitle {
                     color: $main-soft-color;
@@ -110,7 +116,7 @@
                             color: $main-color;
                         }
                     }
-                    &-munus {
+                    &-minus {
                         transform: rotate(180deg);  
                         
                     }

@@ -110,11 +110,18 @@
         justify-content: flex-end;
         align-items: center;
         &__icon {
-            width: 28px;
-            height: 40px;
+            width: 34px;
+            height: 36px;
+            padding: 0;
             background: url(../img/cart-icon.svg) no-repeat center center;
             background-size: contain;
             margin-left: 1rem;
+        }
+        &.open {
+            .cart-small__icon {
+                background: url(../img/cart-icon-open.svg) no-repeat center center;
+                background-size: contain;
+            }
         }
     }
     

@@ -60,6 +60,9 @@
         //     }
         // }
     }
+    .page-title {
+        margin-bottom: 3rem;
+    }
     .banner {
         height: 250px;
         &__item {
@@ -90,6 +93,29 @@
         //     padding: 100px 0 1.5rem;
         // }
     }
+    .main {
+        padding-top: 130px;
+    }
+    .single-product {
+        &__title {
+            text-align: center;
+        }
+        &__info {
+            align-items: center;
+
+            img {
+                max-width: 350px;
+            }
+        }
+        &__trade {
+            margin: 2rem auto 1rem;
+        }
+    }
+    .specifications {
+        &__name {
+            font-size: rem(25);
+        }
+    }
     .footer {
         &__contacts {
             flex-direction: column;
@@ -114,9 +140,6 @@
         &__social {
             margin-right: 0;
         }
-    }
-    .main {
-        padding-top: 130px;
     }
 }
 
@@ -255,6 +278,13 @@
         &__submit {
             margin-bottom: 1rem;
             padding: 1rem;
+        }
+    }
+    .single-product {
+        &__info {
+            img {
+                max-height: 350px;
+            }
         }
     }
     .page-title {

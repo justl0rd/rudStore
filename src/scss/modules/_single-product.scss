@@ -1,0 +1,92 @@
+.single-product {
+    padding: 3rem 0;
+    &__info {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+
+        img {
+            width: 80%;
+            max-width: 400px;
+            object-fit: contain;
+        }
+
+        p {
+            margin: .7rem 0;
+            font-size: rem(18);
+            line-height: 1.4em;
+        }
+
+    }
+    &__trade {
+        margin: 2rem 0 0 auto;
+
+        .product {
+            &__add {
+                width: 100%;
+                max-width: 240px;
+            }
+            &__calc {
+                max-width: 120px;
+                &-button {
+                    color: $colored-text;
+                    background: transparent;
+                    transition: all .2s;
+                    &:hover {
+                        color: $main-color;
+                    }
+                }
+                &-minus {
+                    transform: rotate(180deg);  
+                    
+                }
+                &-plus {
+                    
+                }
+                &-input {
+                    width: 50px;
+                    text-align: center;
+                    border: 1px solid $dark-border-color;
+                    border-radius: 3px;
+                    margin: 0 0.3rem;
+                }
+            }
+            &__amount {
+                justify-content: space-between;
+                align-items: center;
+                margin-bottom: 1rem;
+                padding-top: 0.7rem;
+            }
+        }
+    }
+}
+.specifications {
+    margin: 2rem 0;
+
+    &__name {
+        text-transform: uppercase;
+        font-size: rem(28);
+    }
+}
+.specification {
+    margin: 1rem 0 0;
+    ul {
+        font-size: rem(14);
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 0.7rem;
+
+        li:first-child {
+            margin-right: 2rem;
+        }
+        li:nth-child(2) {
+            text-align: right;
+        }
+
+        &:first-child {
+            padding: 0.4rem 0;
+            text-transform: uppercase;
+            border-bottom: 1px solid $dark-border-color;
+        }
+    }
+}
