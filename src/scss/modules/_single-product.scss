@@ -90,11 +90,20 @@
 }
 
 .similar {
-    padding: 1rem 0 2rem;
+    padding: 1rem 0 3rem;
 
     &__title {
         margin-bottom: 2rem;
         text-align: center;
+    }
+    &__name {
+        text-align: center;
+        font-size: rem(20);
+        margin-top: 1rem;
+    }
+    &__img {
+        max-height: 300px;
+        object-fit: contain;
     }
     &__slider {
         img,

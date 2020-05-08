@@ -19,19 +19,19 @@ $('.similar__slider').owlCarousel({
     responsiveClass:true,
     responsive:{
         0:{
-            items:2
+            items:1
         },
         600:{
-            items:3
+            items:2
         },
         900:{
             items:3
         },
         1200:{
-            items:4
+            items:3
         },
         1350:{
-            items:5
+            items:4
         }
     }
 });
