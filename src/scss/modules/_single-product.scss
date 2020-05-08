@@ -90,3 +90,18 @@
         }
     }
 }
+
+.similar {
+    padding: 1rem 0 2rem;
+
+    &__title {
+        margin-bottom: 2rem;
+        text-align: center;
+    }
+    &__slider {
+        img,
+        a {
+            display: block;
+        }
+    }
+}
