@@ -64,10 +64,6 @@
                         object-fit: contain;
                     }
                 }
-
-                &__info {
-
-                }
                 &__title {
                     font-size: rem(18);
                     font-weight: 900;
@@ -118,9 +114,6 @@
                     }
                     &-minus {
                         transform: rotate(180deg);  
-                        
-                    }
-                    &-plus {
                         
                     }
                     &-input {
