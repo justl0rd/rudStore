@@ -49,29 +49,32 @@ function clickHandler() {
             modalClose(miniCartBtn, "open");
         }
 
-        if (e.target.closest(".product__calc-button")) {
-            productCount(e.target.closest(".product__calc-button"))
+        if (e.target.closest(".amount__calc-button")) {
+            productCount(e.target.closest(".amount__calc-button"))
         }
     })
 }
 
 function productCount(btn) {
-    let productInput = btn.parentElement.querySelector(".product__calc-input"); 
-    if (btn.classList.contains("product__calc-plus")) {
+    let productInput = btn.parentElement.querySelector(".amount__calc-input"); 
+    if (btn.classList.contains("amount__calc-plus")) {
         productInput.value ++;
     }
-    if (btn.classList.contains("product__calc-minus")) {
+    if (btn.classList.contains("amount__calc-minus")) {
         productInput.value --;
         if (productInput.value < 1) {
             productInput.value = 1;
         }
     }
+    if (btn.closest(".cart__item")) {
+        totalCalc()
+    }
 }
 
 function productInputHandler() {
-    const productsInputs = document.querySelectorAll(".product__calc-input");
+    const productsInputs = document.querySelectorAll(".amount__calc-input");
 
-    productsInputs.forEach(input => input.addEventListener('change', () => {
+    productsInputs.forEach(input => input.addEventListener('input', () => {
         input.value = input.value.replace (/\D/g, '');
         if (input.value === '' || input.value < 1) {
             input.value = 1;
@@ -102,11 +105,34 @@ function scrollHandler() {
     })
 }
 
+function totalCalc() {
+    let products = document.querySelectorAll(".cart__item");
+
+    if(products) {
+        let totalPriceValue = 0;
+        const totalPrice = document.getElementById("cart-total__sum");
+        
+        products.forEach(product => {
+            const price = product.querySelector(".cart-item__price-data").dataset.price;
+            let count = product.querySelector(".amount__calc-input");
+
+            totalPriceValue += (price * count.value);
+            totalPrice.innerHTML = totalPriceValue;
+
+            product.querySelector(".cart-item__total").innerHTML = (price * count.value);
+            count.oninput = () => {
+                totalCalc();
+            }
+        });
+    }
+}
+
 document.addEventListener("DOMContentLoaded", () => {
     miniCartStatus();
     langStatus();
     hamburgerStatus();
     clickHandler();
-    scrollHandler()
-    productInputHandler()
+    scrollHandler();
+    productInputHandler();
+    totalCalc();
 });
