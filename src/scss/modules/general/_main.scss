@@ -1,5 +1,10 @@
 .main {
-    padding-top: 90px;
+    padding-top: calc(98px + 1.5rem);
+    min-height: calc(100vh - 180px);
+
+    &_home {
+        padding-top: 96px;
+    }
 }
 .categories {
     padding: 3rem 0 0;
@@ -10,9 +15,9 @@
         flex-wrap: wrap;
     }
     &__item {
-        width: calc(50% - 15px);
+        // width: calc(50% - 15px);
+        width: 50%;
         min-height: 240px;
-        margin-bottom: 30px;
     }
     &__link {
         position: relative;
@@ -64,5 +69,34 @@
     }
     &__date {
         color: $main-soft-color;
+    }
+}
+
+.breadcrumbs {
+    display: flex;
+    margin-bottom: 1.5rem;
+    
+    li {
+        margin-right: .5rem;
+        display: flex;
+        align-items: center;
+        font-weight: bold;
+
+        &::after {
+            display: inline-block;
+            font-family: "Flaticon";
+            content: '\f10d';
+            font-size: rem(12);
+            font-weight: bold;
+            opacity: .7;
+            margin-left: 0.5rem;
+        }
+        &:last-child::after {
+            display: none;
+        }
+        
+        a:hover {
+            text-decoration: underline;
+        }
     }
 }

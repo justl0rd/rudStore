@@ -25,9 +25,6 @@
             min-height: 180px;
         }
     }
-    .order {
-        padding: 3rem 0 2rem;
-    }
     .catalog {
         &__products {
             &.products {
@@ -97,7 +94,7 @@
         // }
     }
     .main {
-        padding-top: 130px;
+        padding-top: calc(130px + 1.5rem);
     }
     .single-product {
         &__title {
@@ -155,6 +152,32 @@
                 }
             }
         }
+        .client-data {
+            padding: 1.5rem;
+
+            &__title {
+                font-size: rem(28);
+            }
+            &__form {
+                .label-33 {
+                    width: 100%;
+                }
+                .label-50 {
+                    width: 100%;
+                }
+            }
+        }
+    }
+    .breadcrumbs {
+        flex-wrap: wrap;
+        li {
+            font-size: rem(14);
+            margin-right: 0.3rem;
+            &::after {
+                font-size: rem(10);
+                margin-left: 0.3rem;
+            }
+        }
     }
 }
 
@@ -162,7 +185,7 @@
     .header {
         .logo {
             &__img {
-                width: 60px;
+                width: 45px;
             }
         }
         .cart-small {
@@ -216,7 +239,6 @@
     .categories {
         &__item {
             min-height: 150px;
-            margin-bottom: 1rem;
         }
         &__link {
             padding: 1.5rem;
@@ -290,12 +312,10 @@
             }
         }
         &__submit {
-            margin-bottom: 1rem;
             padding: 1rem;
         }
     }
     .single-product {
-        padding: 3rem 0 2rem;
         &__info {
             img {
                 max-height: 350px;
@@ -309,7 +329,6 @@
         padding: .8rem 1.5rem;
     }
     .order {
-        padding: 2rem 0;
         .cart {
             &-item {
                 &__title {
@@ -330,6 +349,15 @@
                         margin-bottom: 0.5rem;
                     }
                 }
+            }
+        }
+    }
+    .breadcrumbs {
+        margin-bottom: 1rem;
+        li {
+            font-size: rem(11);
+            &::after {
+                font-size: rem(8);
             }
         }
     }

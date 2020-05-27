@@ -1,5 +1,5 @@
 .order {
-    padding: 5rem 0 2rem;
+    padding: 1rem 0;
 
     .cart {
         &-item {
@@ -45,6 +45,9 @@
                     font-size: rem(13);
                     margin-left: 0.1rem;
                 }
+                &-total {
+                    min-width: 125px;
+                }
             }
             &__del {
                 position: absolute;
@@ -64,12 +67,14 @@
 
         &-total {
             display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 1rem 2rem;
+            width: 100%;
+            margin: 0;
             background: $bg-medium;
             border: 1px solid $dark-border-color;
             border-radius: 3px;
+            padding: 1rem 2rem;
+            justify-content: space-between;
+            align-items: center;
 
             &__info {
                 display: flex;
@@ -83,6 +88,56 @@
                 font-size: rem(15);
                 margin-left: 0.1rem;
             }
+        }
+    }
+    
+    .client-data {
+        background: $bg-medium;
+        border: 1px solid $dark-border-color;
+        border-radius: 3px;
+        margin-top: 1rem;
+        padding: 2rem;
+
+        &__title {
+            margin-bottom: 1.5rem;
+            font-size: rem(32);
+            text-align: center;
+        }
+
+        &__form {
+            display: flex;
+            flex-wrap: wrap;
+
+            .label-33 {
+                width: 33.333%;
+            }
+
+            .label-50 {
+                width: 50%;
+            }
+
+            .label-100 {
+                width: 100%;
+            }
+
+            input {
+                width: calc(100% - 0.7rem);
+                background: $bg-light;
+                padding: 0.7rem;
+                margin: 0 .35rem .7rem;
+                border: 1px solid $dark-border-color;
+            }
+            textarea {
+                width: calc(100% - 0.7rem);
+                background: $bg-light;
+                padding: 0.7rem;
+                margin: 0 .35rem .7rem;
+                border: 1px solid $dark-border-color;
+                resize: none;
+            }
+        }
+        &__btn {
+            margin: 0 auto;
         }
     }
 }

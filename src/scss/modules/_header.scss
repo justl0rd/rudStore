@@ -18,10 +18,37 @@
         position: relative;
     }
 
+    &-topline {
+        margin-bottom: 0.6rem;
+        .cabinet {
+            display: flex;
+            justify-content: flex-end;
+        
+            &__link {
+                display: flex;
+                align-items: center;
+                font-size: rem(14);
+        
+                &:hover {
+                    color: $colored-text;
+                }
+                &::before {
+                    content: '';
+                    display: block;
+                    width: 1em;
+                    height: 100%;
+                    margin-right: .3rem;
+                    background: url(../img/user.png) no-repeat center center;
+                    background-size: contain;
+                }
+            }
+        }
+    }
+
     .searchform {
-        max-width: 270px;
-        height: 48px;
-        margin: 0 .8rem;
+        max-width: 250px;
+        height: 35px;
+        margin: 0 .7rem;
         position: relative;
         
         &__input {
@@ -36,8 +63,8 @@
             top: 0;
             height: 100%;
             background: transparent;
-            width: 40px;
-            font-size: rem(25);
+            width: 35px;
+            font-size: rem(21);
             color: $main-color;
             transition: all .2s;
             
@@ -52,7 +79,7 @@
         margin: 0 auto;
         &__img {
             object-fit: contain;
-            width: 80px;
+            width: 55px;
         }
     }
 
@@ -63,21 +90,34 @@
             width: fit-content;
             position: relative;
             padding-right: 15px;
-            cursor: pointer;
 
             ul {
-                li:nth-child(2) {
-                    display: none;
-                    position: absolute;
-                    left: 0;
-                    top: calc(100% + .5rem);
+                display: flex;
+                li {
+                    display: flex;
 
-                    a {
+                    &:first-child {
+                        &::after {
+                            content: "";
+                            display: block;
+                            margin: 0 .5rem;
+                            width: 2px;
+                            height: 100%;
+                            background: $dark-border-color;
+                        }
+                    }
+                    
+                    span {
                         color: $colored-text;
                         font-weight: bold;
+                        cursor: context-menu;
+                    }
+
+                    a {
+                        
 
                         &:hover {
-                            color: $main-text-color;
+                            color: $colored-text;
                         }
                     }
                 }
@@ -115,7 +155,7 @@
             padding: 0;
             background: url(../img/cart-icon.svg) no-repeat center center;
             background-size: contain;
-            margin-left: 1rem;
+            margin-left: .5rem;
         }
         &.open {
             .cart-small__icon {
@@ -127,7 +167,7 @@
     
     .hamburger {
         width: 24px;
-        height: 25px;
+        height: 19px;
         position: relative;
         background: transparent;
 
@@ -143,18 +183,18 @@
             } 
             &:nth-child(2) {
                 left: 0;
-                top: 11px;
+                top: 8px;
             } 
             &:nth-child(3) {
                 left: 0;
-                top: 22px;
+                top: 16px;
             } 
         }
 
         &.active {
             span {
                 &:nth-child(1) {
-                    transform: rotate(225deg) translate(-6px,-9px);
+                    transform: rotate(225deg) translate(-5px,-6px);
                     background: $main-active;
                 } 
                 &:nth-child(2) {
@@ -162,7 +202,7 @@
                     transform: scale(0);
                 }
                 &:nth-child(3) {
-                    transform: rotate(-225deg) translate(-6px, 10px);
+                    transform: rotate(-225deg) translate(-5px, 7px);
                     background: $main-active;
                 } 
             }

@@ -26,6 +26,15 @@
 <body>
 	<header class="header" id="header">
 		<div class="container">
+			<div class="header-topline row">
+				<div class="col-lg-6">
+				</div>
+				<div class="col-lg-6">
+					<div class="cabinet">
+						<a class="cabinet__link" href="cabinet.html">увійдіть в особистий кабінет</a>
+					</div>
+				</div>
+			</div>
 			<div class="header__row">
 				<div class="col-4 col-md-1">
 					<button class="hamburger" id="hamburger">
@@ -52,15 +61,14 @@
 						<div class="lang__box" id="lang__box">
 							<ul>
 								<li>
-									Рус
+									<span>Укр</span>
 								</li>
 								<li>
 									<a href="index.html">
-										Укр
+										Рус
 									</a>
 								</li>
 							</ul>
-							<div class="fi flaticon-next lang__arrow"></div>
 						</div>
 					</div>
 				</div>
@@ -76,10 +84,10 @@
 			</div>
 			<div class="mini-cart" id="mini-cart">
 				<div class="mini-cart__items">
-					<div class="mini-cart__item d-flex">
+					<!-- <div class="mini-cart__item d-flex">
 						<img class="mini-cart__item-img" src="/assets/img/mini-cart-img.jpg" alt="«Імперія» тортуфо">
 						<div class="mini-cart__item-info">
-							<a href="#" class="mini-cart__item-link bold">
+							<a href="single.html" class="mini-cart__item-link bold">
 								«Імперія» тортуфо
 							</a>
 							<div  class="mini-cart__item-price">
@@ -94,25 +102,40 @@
 						<button class="mini-cart__item-remove">
 							<i class="fi flaticon-delete"></i>
 						</button>
-					</div>
+					</div> -->
 				</div>
 				<div class="mini-cart__controls d-flex">
-					<div class="mini-cart__total-wrapp d-flex">
-						<p class="bold">До сплати (грн):</p>
-						<span class="mini-cart__amount bold">41,00</span>
+					<div class="mini-cart__total-wrapp">
+						<p class="bold">У кошику:</p>
+						<span id="mini-cart__total-products" class="mini-cart__amount bold">6</span>
+						<span class="mini-cart__currency bold">товарів</span>
+					</div>
+					<div class="mini-cart__total-wrapp">
+						<p class="bold">На суму:</p>
+						<span id="mini-cart__total-summ" class="mini-cart__amount bold">640</span>
 						<span class="mini-cart__currency bold">грн</span>
 					</div>
 					<a href="order.html" class="mini-cart__submit">
-						Замовити
-					</button>
-					<a href="#" class="mini-cart__link">
-						Перейти до кошика
+						Оформити замовлення
 					</a>
 				</div>
 			</div>
 		</div>
 	</header>
 	<main class="main" id="main">
+		<div class="container">
+			<ul class="breadcrumbs">
+				<li>
+					<a href="index.html">Головна</a>
+				</li>
+				<li>
+					<a href="catalog.html">Морозиво</a>
+				</li>
+				<li>
+					<span>«Імпреза» три шоколади</span>
+				</li>
+			</ul>
+		</div>
 		<article class="single-product" id="single-product">
 			<div class="container">
 				<h1 class="page-title single-product__title">

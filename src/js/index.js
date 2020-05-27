@@ -8,13 +8,6 @@ function miniCartStatus() {
     }
 }
 
-function langStatus() {
-    const langBtn = document.getElementById("lang__box");
-    langBtn.onclick = (e) => {
-        langBtn.classList.toggle("active");
-    }
-}
-
 function hamburgerStatus() {
     const hamburgerBtn = document.getElementById("hamburger");
     const hamburgerMenu = document.getElementById("menu");
@@ -129,7 +122,6 @@ function totalCalc() {
 
 document.addEventListener("DOMContentLoaded", () => {
     miniCartStatus();
-    langStatus();
     hamburgerStatus();
     clickHandler();
     scrollHandler();
